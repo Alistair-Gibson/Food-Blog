@@ -1,0 +1,101 @@
+html {
+  min-height: 100%;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: rgb(252, 227, 138);
+  background: linear-gradient(90deg, rgba(252, 227, 138, 1) 0%, rgba(252, 227, 138, 1) 50%, rgba(234, 255, 208, 1) 100%);
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+a:hover {
+  color: #f38181
+}
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  grid-template-rows: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  display: flex;
+  justify-content: center;
+  padding-left: 40px;
+  grid-column: 1 / 2;
+}
+
+.title {
+  font-size: 6rem;
+  font-weight: 400;
+  color: #5f6769
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2 / 3;
+}
+
+.nav-link {
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+.divider {
+  border-color: #95e1d3;
+  border-width: 5px;
+  border-style: solid;
+  margin: 10px 20%;
+  border-radius: 10px
+}
+
+.card {
+  background: #95e1d3;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.footer-padding {
+  padding-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.footer p {
+  margin-top: 25px;
+  font-size: 12px;
+}
+
+@media (max-width: 650px) {
+  .title {
+    font-size: 4.5rem;
+  }
+}

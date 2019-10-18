@@ -1,0 +1,24 @@
+<%- include("partials/header"); -%>
+
+<div class="card">
+    <h1>Contact</h1>
+    <div class="contact-form">
+        <form action="mailto:alistair111@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>
+                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+            </div>
+            <input class="btn-lg btn-secondary" type="submit" name="">
+        </form>
+    </div>
+</div>
+
+<%- include("partials/footer"); -%>

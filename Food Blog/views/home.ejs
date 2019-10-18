@@ -1,0 +1,33 @@
+<%- include("partials/header"); -%>
+
+<div class="card">
+  <h1>Home</h1>
+
+  <p> I wont go into to much detail about the two of us here since this is just a little intro to the blog if you would
+    like to know a little more check out the about page. This blog is made by myself Alistair and is written by me and
+    my girlfriend Rhiannon, we currently live Exeter but only recently moved from Bristol. We like to eat so decided it
+    would be fun to write a little bit about some of the places we have enjoyed and in all honesty that's about it. The
+    blog will predominantly be about food but since that subject is intertwined into a lot of our activity's and
+    travelling some other things might slip in. Hope you enjoy reading some of what we have to say.
+  </p>
+</div>
+
+
+
+
+<%  posts.forEach(function(post){ %>
+
+<div class="card">
+  <h1><%=post.title%></h1>
+  <p>
+    <%=post.content.substring(0, 1000) + " ..."%>
+    <a href="/posts/<%=post._id%>">Read More</a>
+  </p>
+</div>
+
+
+
+<% }) %>
+
+
+<%- include("partials/footer"); -%>
